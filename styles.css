@@ -19,13 +19,27 @@ body {
 }
 
 #divbody {
+    width: 85%;
     max-width: 1300px;
     background-color: rgb(202, 202, 247);
     margin: auto;
     box-shadow: 0px 0px 10px rgb(2, 29, 52);
 }
 
+section, article {
+    background-color: aquamarine;
+    margin: 5%;
+}
 /* Heading Styles */
+
+h1 {
+    font-size: 2em;
+    background-color: aqua;
+}
+
+p {
+    background-color:aliceblue;
+}
 
 /* Navigation Styles */
 nav {
@@ -59,7 +73,11 @@ a:hover {
     color: black;
     box-shadow: 0 0 10px rgba(138, 4, 248, 0.926);
 }
+/* Image styles */
 
+#cert {
+    width: 100%;
+}
 /* Footer Styles */
 footer {
     background-color: rgb(56, 7, 89);
@@ -72,6 +90,9 @@ footer {
 /* Media Queries */
 
 @media screen and (max-width: 750px) {
+    #divbody {
+        width: 92%;
+    }
     body {
         font-size: 1em;
     }
