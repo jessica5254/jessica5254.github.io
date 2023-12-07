@@ -11,9 +11,18 @@
 
 /* Body Styles */
 body {
+    background-color: rgb(98, 102, 230);
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    font-size: 1.1em;
+}
+
+#divbody {
+    max-width: 1300px;
+    background-color: rgb(202, 202, 247);
+    margin: auto;
+    box-shadow: 0px 0px 10px rgb(2, 29, 52);
 }
 
 /* Heading Styles */
@@ -22,6 +31,7 @@ body {
 nav {
     background-color: rgb(56, 7, 89);
     display: flex;
+    box-shadow: 0px 0px 5px rgb(2, 29, 52);
 }
 
 ul {
@@ -40,26 +50,37 @@ a {
     color: white;
     text-align: center;
     text-decoration: none;
-    padding: 14px 16px;
+    padding: 16px;
     display: block;
 }
 
 a:hover {
     background-color: lavender;
     color: black;
-    box-shadow: 0 0 10px rgba(138, 4, 248, 0.5);
+    box-shadow: 0 0 10px rgba(138, 4, 248, 0.926);
 }
 
 /* Footer Styles */
-
+footer {
+    background-color: rgb(56, 7, 89);
+    color: white;
+    text-align: center;
+    padding: 5px;
+    box-shadow: 0px 0px 5px rgb(2, 29, 52);
+}
 
 /* Media Queries */
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 750px) {
+    body {
+        font-size: 1em;
+    }
+
     li {
         flex: 1 0 33%;
-        
+
     }
+
     ul {
         flex-wrap: wrap;
     }
