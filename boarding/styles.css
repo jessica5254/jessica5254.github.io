@@ -1,0 +1,255 @@
+@charset "utf-8";
+
+/*  
+    Asignment:Exam 2
+    Author:Jessica Hite
+    Date:10/14/2023
+
+    filename: styles.css
+*/
+
+
+/*Body Syles*/
+header {
+    margin-top: 0px;
+}
+body {
+    background-image: url(wood.png);
+    margin-top: 0%;
+    margin-bottom: 0%;
+    display: flex;
+    flex-direction: column;
+    font-family: Georgia, Verdana, 'Times New Roman', Times, serif;
+}
+.main {
+    background-image: url(pawsTile.png);
+    margin: auto;
+    max-width: 1200px;
+}
+p {
+    background-color: rgba(240, 255, 255, 0.603);
+    padding: 2%;
+    margin: 2%;
+    font-size: 1.2em;
+}
+#column3 > ul {
+    background-color: rgba(240, 255, 255, 0.603);
+    padding: 5%;
+    padding-left: 10%;
+    text-align: center;
+}
+.sched {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: antiquewhite;
+    text-align: left;
+    border: 4px dotted black;
+    font-size: 1.1em;
+}
+.scheddays, .schedtimes {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: antiquewhite;
+}
+
+.boarding {
+    display: flex;
+    flex-direction: column;
+}
+.side {
+    display: flex;    
+    flex-direction: row-reverse;
+}
+.fl1 {
+    flex: 1;
+    border: 2px dotted black;
+}
+.fl2 {
+    flex: 2;
+    border: 2px dotted black;
+}
+article > section > p {    
+    background-color: antiquewhite;
+}
+
+.scheddays {
+    padding-right: 5%;
+}
+#contact {
+    flex-direction: row;
+}
+
+/*Heading Styles*/
+header > h1 {
+    background: none;
+    text-align: center;
+    box-shadow: none;
+    text-shadow: 2px 2px 3px rgb(148, 55, 9);
+}
+
+h1 {
+    background-color: rgba(235, 197, 114, 0.908);
+    box-shadow: 6px 6px 4px rgb(212, 122, 3);
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+/*Columns Styles */
+#columns ul {
+    list-style-image: url(homeicon.png);
+}
+#column3 li{
+    padding-bottom: 2%;
+}
+
+/*Image Styles */
+img {
+    border: 6px groove rgba(228, 93, 26);
+
+}
+.dogpark {
+    width: 95%;
+}
+.fb {
+    width: 100%;
+    border: none;
+}
+.imgs3 {
+    display: flex;
+    padding-left: 2%;
+}
+.waterdog {
+    width: 45%;
+}
+.entry {
+    width: 50%;
+    float:right
+}
+/*Navigation Styles */
+nav> ul> li a:visited, nav > ul > li a:link {
+    color: rgb(8, 6, 3);
+    text-decoration: none;
+}
+
+nav> ul> li:hover {
+    background-color: rgba(165, 47, 47, 0.586);
+    text-decoration: underline;
+    
+}
+
+nav > ul {
+    margin-top: 0%;
+    padding-top: 0%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0%;
+    font-size: 1.2em;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+nav > ul > li {
+    display: flex;
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(248, 216, 171);
+    border: 1px solid black;
+    color: blanchedalmond;
+}
+
+nav > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+/*Footer Styles */
+footer {
+    text-align: center;
+    background-color: rgba(235, 137, 77, 0.733);
+}
+/*Media Queries*/
+@media screen and (max-width: 489px) {
+.dogpark, .a10, .a09, .a04, .a05, .groom, .waterdog  {
+    display: none;
+}
+.mobh {
+    display: none;
+}
+#columns {
+    display: flex;
+    flex-direction: column;
+}
+}
+
+@media screen and (min-width: 490px) {
+nav > ul {
+    flex-direction: row;
+    font-size: 1.2em;
+}
+
+.groom  {
+    width: 48%;
+}
+.fb {
+    display: none;
+}
+
+
+#columns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#column3 {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+#column1, #column2 {
+    display: flex;
+    flex-direction: column;
+    flex: 50%;
+}
+.entry {
+    width: 90%; 
+    margin-left: 3%; 
+    float: none;   
+}
+}
+@media screen and (max-width: 998px) {
+    .a10, .a09, .a04, .a05  {
+        display: none;
+    }
+}
+@media screen and (min-width: 999px) {
+#column1, #column2, #column3 {
+    display: flex;
+    flex-direction: column;
+    flex: 30%;
+    }
+
+.a10, .a09, .a04, .a05  {
+    width: 20%;
+    margin-left: 2%;
+    margin-right: 2%;
+    }
+.imgsf {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }    
+}
+
+
+

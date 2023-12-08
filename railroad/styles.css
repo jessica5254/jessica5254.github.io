@@ -1,0 +1,237 @@
+@charset "utf-8";
+
+
+/*
+    Asignment Name: Exam 3
+    Author: Jessica Hite
+    Date: 11/11/2023
+
+    Filename:styles.css
+*/
+
+/* Body Styles */
+@font-face {
+    font-family: EBGaramond;
+    src: url(EBGaramond-VariableFont_wght.ttf) format(truetype);
+}
+
+
+body {
+    background-color: rgb(141, 167, 122);
+    margin: 0%;
+    font-family: EBGaramond, 'Times New Roman', Times, serif;
+    font-size: 1.1em;
+    letter-spacing: .06em;
+    word-spacing: .08em;
+}
+
+p {
+    padding: 10px;
+}
+#divbody {
+    margin: auto;
+    max-width: 1100px;
+    background-color:rgba(205, 205, 130, 0.721); 
+}
+
+#divsection {
+    display: grid;
+    grid-template-areas:
+     'welcome rr1'
+     'rr3  join';
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+}
+#conta a {
+    text-decoration: underline;
+}
+#conta {
+    text-align: center;
+}
+#toursmain {
+    display: grid;
+    grid-template-areas: 
+    'rr2 toursec';
+}
+
+
+#thanks {
+    font-size: 1.2em;
+    text-align: center;
+}
+#locsec {
+    padding: 10px;
+}
+/* Heading Styles */
+header div {
+    background-image:url(pexels-irina-iriser-673803.jpg);
+    padding-bottom: 6%;
+    padding-top: 1%;
+    
+    background-size: cover;
+    background-position: center;
+    margin-top: 0px;
+}
+
+header h2 {
+    padding-left: 10%;
+    margin-top: 0%;
+    background-color: rgba(245, 167, 22, 0.166);
+}
+
+header h1 {
+    margin-bottom: 0px;
+    background-color: rgba(245, 167, 22, 0.166);
+    padding-left: 6%;
+}
+
+section > h2 {
+    font-size: 2em;
+    padding-left: 20px;
+}
+
+#banner {
+    width: 100%;
+    background-color: rgb(193, 226, 197);
+    text-align: center;
+    font-weight: 800;
+    font-size: .8em;
+    margin-bottom: 10px;
+    word-spacing: .5em;
+}
+
+
+
+/* Navigation Styles */
+nav > ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0%;
+    background-color:  rgba(106, 142, 35, 0.725);
+    font-size: 1.2em;
+    margin-top: 0%;
+    margin-bottom: 0px;
+}
+
+nav > ul > li {
+    display: flex;
+    text-align: center;
+    flex: 1;
+}
+a {
+    text-decoration: none;
+    color: black;
+    flex-grow: 1;
+}
+
+a:hover {
+    color: rgb(200, 204, 199);   
+    text-decoration:underline;
+    background-color: rgba(85, 93, 84, 0.707);
+}
+/* Form Styles */
+
+.formdiv {
+    padding: 15px;
+    width: 80%;
+    margin: auto;
+    background-color: rgba(139, 179, 129, 0.715);
+    margin-bottom: 50px;
+    border: 6px inset rgba(0, 128, 0, 0.674);
+}
+
+.submit {
+    width: 50%;
+    margin-left: 25%;
+}
+/* Image Styles */
+img {
+    border: inset 8px rgb(149, 112, 58);
+}
+
+#rr1 {
+    width: 100%;
+}
+
+#rr3 {
+    width:90%;
+}
+
+#rr2 {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 20px;
+}
+
+#model  {
+    width: 45%;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+#cabin {
+    width: 45%;
+}
+
+#bwloco {
+    max-width: 40%;
+}
+
+#mapimg {
+    float: right;
+    margin-right: 20px;
+    margin-top: 50px;
+}
+/* Footer Styles */
+
+footer {
+    text-align: center;
+    background-color:  rgba(106, 142, 35, 0.725);
+}
+
+/*Media queries */
+@media screen and (max-width: 750px) {
+    #rr2 {
+        width: 60%;
+        margin:auto ;
+    }
+    #model, #cabin{
+        display: none;
+    }
+    #toursmain {
+        display: grid;
+        grid-template-areas: 
+            'rr2' 
+            'toursec';
+    }
+
+    #mapimg {
+        float: none;
+        margin: auto;
+        margin-left: 15%;
+    }
+}
+
+@media screen and (max-width: 620px) {
+
+    #divsection {
+        grid-template-areas:
+         'welcome' 
+         'rr1'
+         'join'
+         ;
+    }
+
+    #rr3{
+        display: none;
+    }
+
+    
+    #mapimg {
+        width: 50%;
+    }
+
+    
+}

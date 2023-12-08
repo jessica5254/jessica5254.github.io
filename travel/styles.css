@@ -1,0 +1,338 @@
+@charset "utf-8";
+
+
+/*
+    Asignment Name: Responsive Travel
+    Author: Jessica Hite
+    Date: 2023/09/30
+
+    Filename:styles.css
+*/
+
+/* Body Styles */
+
+@font-face {
+    font-family: Courgette;
+    src: url('Courgette-Regular.ttf') format('truetype');
+}
+body {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    background-color: #305d62;
+    font-size: 1em;
+}
+
+.main {
+    max-width: 1500px;
+    margin: auto;
+    background-color:#efdedb;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.locationp {
+    width: 800px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+
+
+/* Heading Styles */
+header > h1 {
+    background-image: url(shutterstock_1153244932.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 100px;
+    text-align: center;
+    margin: 0%;
+    font-size: 3.5em;
+    letter-spacing: .03em;
+    color: rgb(5, 4, 3);
+    text-shadow: 5px 5px 5px rgb(105, 151, 100);
+}
+
+h1, h2 {
+    font-family: Courgette, 'Times New Roman', Times, serif;
+}
+header > p {
+    text-align: center;
+    font-size: 1.2em;
+    padding-top: 2px;
+    padding-bottom:2px; 
+    margin-top: 0%;
+    background-color: rgb(243, 185, 162);
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.8em;
+    background-color: #f6bb80;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    box-shadow: 0px 0px 30px rgb(54, 144, 106);
+    margin-bottom: 30px;
+}
+
+.loch2 {
+    width: 74%;
+}
+
+
+/* Aside Styles */
+aside {
+    float: right;
+    border: 2px solid rgb(11, 6, 6);
+    background-image: linear-gradient(to top, rgb(146, 204, 171), rgb(237, 186, 68) );
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 100px;
+    margin-left: 20px;
+    width: 200px;
+    margin-top: 90px;
+    border-radius: 10%;
+    text-align: center;
+    word-spacing: .08em;
+}
+
+aside >h1 {
+    font-size: 1.2em;
+    font-weight: lighter;
+}
+
+
+/* Sections */
+
+section {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.welcome {
+    width: 450px;
+    border: 2px solid #305d62;
+    box-shadow: 0px 0px 30px rgb(54, 144, 106);
+    border-radius: 5%;
+    margin-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-image: linear-gradient(to bottom,  rgb(241, 184, 134) , rgb(238, 123, 36));
+    color: #1a1b2a;
+    font-size: larger;
+}
+
+
+.images {
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+.parap {
+    padding: 20px;
+    background-color: #9bc5ad;
+    word-spacing: .08em;
+    text-shadow: 3px 2px 8px #1d5b19;
+    color: rgb(25, 47, 87);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* Images */
+img {
+    border: 3px inset rgb(38, 72, 135);
+}
+
+.dining {
+    max-width: 60%;
+    position: relative;
+    left: 250px;
+    bottom: 50px;
+}
+
+.shops {
+    max-width: 60%;
+}
+
+.topview {
+    max-width: 54%;
+    float: right;
+}
+
+.beachview {
+    max-width: 30%;
+}
+
+.night {
+    max-width: 33.9%;
+}
+.fort {
+    max-width: 38%;
+}
+
+.lighthouse {
+    max-width: 35%
+}
+
+.boats {
+    max-width: 33.6%;
+}
+
+.partyboat {
+    max-width: 100%;
+}
+
+.shopndine, .entertainment {
+    width: 48%;
+    float: left;
+    margin-left: 0%;
+    margin-right:0%;
+}
+
+.shopndine {
+    margin-left: 4%;
+}
+
+.columns {
+    margin-right: 100px;
+    margin-left: 100px;
+    align-items: center;
+    
+}
+
+/* Float Clear */
+.clear-aside {
+    clear: right;
+}
+
+.clearfloat::after { 
+    content: ""; 
+    display: table;
+    clear: both; 
+}
+
+/* Footer Styles */
+
+footer {
+    background-color: rgb(243, 185, 162);
+    text-align: center;
+    padding: 5px;
+    clear: both;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1410px) {
+.topview {
+    display: none;
+}
+.welcome {
+    margin: auto;
+    margin-bottom: 20px;
+    width: 800px;
+    border-radius: 0%;
+}
+
+.locationp {
+    width: 700px;
+}
+}
+
+@media screen and (max-width: 1228px) {
+.fort {
+    max-width: 700px;
+}
+.lighthouse {
+    display: none;
+}
+
+aside {
+    margin-top: 220px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.break {
+    display: none;
+}
+}
+
+
+@media screen and (max-width: 1172px) {
+aside {
+    display: none;
+}
+.locationp {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+.fort {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+.loch2 {
+    margin-left: auto;
+    margin-right: auto;
+}
+.dining {
+    display: none;
+}
+
+.shops {
+    max-width: 100%;
+}
+
+header > h1 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.boats {
+    display: none;
+}
+.beachview {
+    max-width: 44%; 
+    margin-left: 10px;  
+}
+.night {
+    max-width: 50%;
+}
+.loc {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+}
+
+@media screen and (max-width: 930px) {
+.welcome {
+    max-width:80%;
+}
+
+.shopndine, .entertainment {
+    float: none;
+    width: 100%;
+    margin-left: 0%;
+}
+
+.entertainment {
+    margin-top: 30px;
+}
+.night {
+    display: none;
+}
+.beachview {
+    max-width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+}

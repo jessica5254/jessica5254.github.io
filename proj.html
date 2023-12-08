@@ -28,14 +28,70 @@
                 </ul>
             </nav>
         </header>
-        <section>
+        <section id="projs">
             <h1>Website Development Projects</h1>
-            <p>link a couple projects here</p>
+            <ul>
+                <li><a href="railroad/index.html" target="_blank">Railroad</a></li>
+                <li><a href="travel/index.html" target="_blank">Travel</a></li>
+                <li><a href="boarding/index.html" target="_blank">Dog Boarding</a></li>
+            </ul>
         </section>
         <section>
-            <h1>form for work?</h1>
-            <p>basic form here</p>
+            <h1>Side Projects</h1>
+            <p>Part of a form I created to assist with my departments note taking. </p>
+            <form method="post">
+
+                <label for="notes">Notes/Sumarry:</label>
+                <textarea id="notes" name="notes" rows="6"></textarea>
+
+                <div class="formdiv">
+                    <div>
+                        <label for="Code">Code:</label>
+                        <input type="text" id="Code" name="Code">
+                    </div>
+                    <div>
+                        <label for="Contact">Contact:</label>
+                        <input type="text" id="Contact" name="Contact">
+                    </div>
+                    <div>
+                        <label for="Requires">Requires:</label>
+                        <input type="text" id="Requires" name="Requires">
+                    </div>
+                </div>
+
+                <div class="formdiv">
+                    <div>
+                        <label for="contreq">Contact required?:</label>
+                        <select id="contreq" name="contreq">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="conmad">Contact Made?:</label>
+                        <select id="conmad" name="conmad">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="Schedule">Scheduled?:</label>
+                        <select id="Schedule" name="Schedule">
+                            <option value="choiceX">Yes</option>
+                            <option value="choiceY">No</option>
+                            <option value="choiceZ">To be scheduled</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="submit-buttons">
+                    <input type="button" value="Save">
+                    <input type="button" value="Submit">
+                </div>
+
+            </form>
         </section>
+
         <footer>
             &copy; 2023 &nbsp; Jessica Hite
         </footer>
